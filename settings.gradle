@@ -1,0 +1,2 @@
+include ':app', ':user-profile', ':commons', ':customworkmanager'
+rootProject.name='user-profile-main'

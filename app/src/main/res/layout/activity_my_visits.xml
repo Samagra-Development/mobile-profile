@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?><!--TODO: Fix the Lint warnings in the layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <include layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/action_bar_shadow"
+        layout="@layout/toolbar_action_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar_shadow"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:weightSum="13.2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11">
+
+            <LinearLayout
+                android:id="@+id/view_visit_status"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_above="@id/horizontal_divider"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/linear_layout_shadow"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:src="@drawable/view_filled_forms"
+                    android:tint="@color/app_blue" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Visit Status"
+                    android:textColor="@color/app_blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/horizontal_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/inspect_school"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/horizontal_divider"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/linear_layout_shadow"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:src="@drawable/inspect_school"
+                    android:tint="@color/app_blue"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="Submitted Forms"
+                    android:textColor="@color/app_blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/logo_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:padding="10dp"
+                android:src="@drawable/govt_of_hp_logo" />
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75" />
+
+            <ImageView
+                android:id="@+id/logo3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:alpha="0.6"
+                android:padding="16dp"
+                android:src="@drawable/samarth_logo" />
+
+            <ImageView
+                android:id="@+id/logo4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75" />
+
+            <ImageView
+                android:id="@+id/logo5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:src="@drawable/ssa_logo" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

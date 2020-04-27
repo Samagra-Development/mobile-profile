@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">Samiksha App</string>
+    <string name="view_issues" translatable="false">View Submitted Forms</string>
+    <string name="submit_form" translatable="false">Submit Form</string>
+    <string name="inspect_school" translatable="false">Inspect School</string>
+    <string name="on_internet_saving_complete" translatable="false">Thanks for filling the inspection report. Your report has been submitted</string>
+    <string name="no_internet_saving_complete" translatable="false">Thank you for filling the inspection report for. Since you have filled the report in offline mode, please manually submit the form when connected to the internet from the "Submit form" option</string>
+    <string name="dummy_district">Select the District Name</string>
+    <string name="dummy_block">Select the Block Name</string>
+    <string name="dummy_school">Select the School Name</string>
+    <string name="error_message_search">\u0020\u0020Please fill in all the relevant details of the school.</string>
+    <string name="about_us_title">User Profile Demo App</string>
+    <string name="about_us_summary">This app is a demo app for Samiksha app which is a product of the Department of Education, Haryana Government.\nThe application is used to record observations of academic and non-academic nature from school visits across the state.</string>
+    <string name="check_out_the_documentation_here">Check out the documentation here.</string>
+    <string name="fusionauth_api_key" translatable="false">c0VY85LRCYnsk64xrjdXNVFFJ3ziTJ91r08Cm0Pcjbc</string>
+</resources>
