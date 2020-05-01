@@ -72,8 +72,8 @@ public class MyApplication extends Application implements MainApplication, Lifec
         //Please enter the User ID here. For testing purpose, replace it with "2ff6ad5a-e81e-44c3-9230-d4dfdaf90ddc"
         ComponentManager.registerProfilePackage(new ProfileSectionInteractor(), this, AppConstants.BASE_API_URL,
                 "4b49c1c8-f90e-41e9-99ab-16d4af9eb269",
-                "http://142.93.208.135:8080/shiksha-saathi/",
-                "http://142.93.208.135:8080/shiksha-saathi/",
+                "http://localhost:8080/shiksha-saathi/",
+                "http://localhost:8080/shiksha-saathi/",
                 getApplicationContext().getResources().getString(R.string.fusionauth_api_key), "");
 
     }
